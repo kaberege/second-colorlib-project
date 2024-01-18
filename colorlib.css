@@ -1,88 +1,89 @@
 
 *{
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 .header{
-height:70px;
-display:flex;
-justify-content: space-between;
-align-items:center;
-background-color:rgba(60,60,60,1);
-box-sizing:border-box;
-position:sticky;
-top: 0;
-z-index:5;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(60,60,60,1);
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 .header1{
-margin-left:30px;
-display:flex;
-align-items:center;
-gap:15px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .hcol{
-color:#fff;
-font-size:40px;
-cursor:pointer;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 .hdot{
-color:#0f0;
+  color: #0f0;
 }
 
 .huni{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-background-color:#000;
-height:70px;
-width:200px;
-color:rgba(180,180,180,1);
-font-size:15px;
-cursor:pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #000;
+  height: 70px;
+  width: 200px;
+  color: rgba(180,180,180,1);
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .headList{
-height:70px;
-display:flex;
-align-items:center;
-justify-content:center;
-list-style-type:none;
-justify-content:center;
-margin-right:30px;
-font-size:30px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  justify-content: center;
+  margin-right: 30px;
+  font-size: 30px;
 }
 
 .headList > li{
-border-left:1px solid rgba(180,180,180,1);
-width:60px;
-height:70px;
-display:flex;
-align-items:center;
-justify-content:center;
-cursor:pointer;
-color:#00ff00;
+  border-left: 1px solid rgba(180,180,180,1);
+  width: 60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #00ff00;
 }
 
 .headList >li:hover{
-background-color:#000;
+  background-color: #000;
 }
+
 .headList > li a{
-color:rgba(180,180,180,1);
-text-decoration: none;
+  color: rgba(180,180,180,1);
+  text-decoration: none;
 }
 
 .headList > li:hover a {
-color:rgba(250,250,250,1);
+  color: rgba(250,250,250,1);
 }
 
 .shopactive{
-background-color:rgba(0,255,0,0.6);
+  background-color: rgba(0,255,0,0.6);
 }
 
 /*  Styling the countDate section */
