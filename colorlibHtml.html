@@ -32,12 +32,24 @@
 
 <div class="countDate">
     <p class="dollar">ENDS TOMORROW: <span class="teachable">Join Teachable for $4,800 in bonus content</span></p>
-    <p id="date"></p>
-    <script>
-        const d = new Date();
-        d.getTime();
-         document.getElementById("date").innerHTML = d;
-    </script>
+    <div class="date">
+      <div>
+        <p id="day">29</p>
+        <p>Days</p>
+      </div>
+      <div>
+        <p id="hour">23</p>
+        <p>Hrs</p>
+      </div>
+      <div>
+        <p id="min">59</p>
+        <p>Mins</p>
+      </div>
+      <div>
+        <p id="sec">59</p>
+        <p>Secs</p>
+      </div>
+    </div>
     <a href="#learnMore" class="learnDate">Learn More</a>
 </div>
 
@@ -279,5 +291,35 @@
   <div class="empty-footer"></div>
   <div class="copyright-footer">Copyright ©2023 All rights reserved | This template is made with <span class="heart">&nbsp;&#10084;&nbsp;</span>by <a href="#col" class="colrib">&nbsp;Colorlib</a></div>
 </div>
+<script>
+let [days, hours, minutes, seconds] = [29,23,59,59];
+setInterval(myCount, 1000);
+function myCount(){
+ seconds--;
+ if(seconds == -1){
+   seconds = 59;
+   minutes--;
+   if(minutes == -1){
+     minutes == 59;
+     hours--;
+    if(hours == -1){
+      hours = 23;
+      days--
+     if(days == 0){
+    alert("finished");
+}
+}
+}
+}
+let d = days < 10? "0" + days: days;
+let h = hours < 10? "0" + hours: hours;
+let m = minutes < 10? "0" + minutes: minutes;
+let s = seconds < 10? "0" + seconds: seconds;
+document.getElementById("day").innerHTML = d; 
+document.getElementById("hour").innerHTML = h;
+document.getElementById("min").innerHTML = m;
+document.getElementById("sec").innerHTML = s;
+}
+</script>
 </body>
 </html>
