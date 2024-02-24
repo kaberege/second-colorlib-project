@@ -293,7 +293,7 @@
 </div>
 <script>
 let [days, hours, minutes, seconds] = [29,23,59,59];
-setInterval(myCount, 1000);
+timer = setInterval(myCount, 1000);
 function myCount(){
  seconds--;
  if(seconds == -1){
@@ -305,8 +305,9 @@ function myCount(){
     if(hours == -1){
       hours = 23;
       days--
-     if(days == 0){
-    alert("finished");
+     if(days == -1){
+        [days, hours, minutes, seconds] = [0,0,0,0];
+        clearInterval(timer);
 }
 }
 }

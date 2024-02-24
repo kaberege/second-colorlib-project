@@ -203,17 +203,16 @@
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 1200px) {}
 
 /*  Styling the countDate section */
 
 .countDate{
   height:75px;
   background-color: rgba(40,40,70,1);
-  box-sizing:border-box;
 } 
 
 .dollar{
@@ -228,7 +227,7 @@
 .date{
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 20px;
   color:rgba(240,240,240,1);
 }
 
@@ -237,38 +236,98 @@
   font-size: 22px;
   font-weight: bold;
 }
+
 .learnDate{
   color:rgba(255,255,255,1);
   font-size:20px;
   text-decoration: none;
-  padding-bottom: 4px;
+  padding-bottom: 5px; 
   border-bottom: 2px solid rgba(255,255,255,1);
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px),(min-width: 600px){
   .countDate{
-    height:75px;
+    padding: 10px 20px 10px 20px;
+    height:140px;
     display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center;
-    padding-left:130px;
-    padding-right:130px;
-    box-sizing:border-box;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.dollar{
+      text-align: center;
+}
+
+.learnDate{
+  display: none;
+}
+
+.date{
+  margin: 0 auto 0 auto;
+}
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+
+  .countDate{
+    padding: 10px 20px 10px 20px;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dollar{
+  text-align: center;
+  width: 100%;
+}
+
+.learnDate{
+  text-align: center;
+  height: 30px;
+  display: inline;
+  margin-left: 40px;
+}
+
+.date{
+  text-align: center;
+  margin: 0;
+}
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+ .countDate{
+    width: 100%;
+    padding: 0 5% 0 5%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.dollar{
+  flex: 60%;
+}
+
+.learnDate{
+  display: flex;
+  margin: 0;
+}
+
+.date{
+   flex: 18%;
+} 
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 1200px) {}
 
 /* Styling  University Logo section */
 
@@ -768,7 +827,7 @@ animation: real 10s linear 0.5s infinite;
 @keyframes real {
 0% {background: url('unilogo.webp') no-repeat center;}
 25% {background: url('h1_hero1.jpg.webp') no-repeat center;}
-50% {background url('blog1.jpg.webp') no-repeat center;}
+50% {background: url('blog1.jpg.webp') no-repeat center;}
 75% {background: url('blog2.jpg.webp') no-repeat center;}
 100% {background: url('sari.jpg') no-repeat center;}
 }
