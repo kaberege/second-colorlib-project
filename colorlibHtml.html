@@ -55,9 +55,9 @@
 
 <!-- Styling  University Logo section -->
 
-<div class="unilogo">
-    <div><img src="unilogo.webp" alt="UniversityLogo"></div>
-   <div class="boxbar">
+<div class="unilogo" id="unilogo">
+  <div id="unimg"><img src="unilogo.webp" alt="UniversityLogo"></div>
+  <div class="boxbar" id="boxbar">
      <div class="unicolor"><a href="#home">Home</a></div>
      <div class="unicolor"><a href="#about">About</a></div>
      <div class="unicolor"><a href="#programs">Programs</a></div>
@@ -71,10 +71,10 @@
      </div>
      <div class="unicolor"><a href="#Contact">Contact</a></div>
   </div>
-  <div class="icobar">
+  <div class="icobar" id="icobare">
      <div><a href="#Contact" class="callus">Call Us : <span class="phone0">0 (78) 675 3674</span></a></div>
      <div><a href="#Contact" class="longbar">|</a></div>
-     <div class="icobar2"> 
+     <div class="icobar2" id="myicon"> 
         <a href="#icon" class="xeeter"><i class="fab">&#xf082;</i></a>
         <a href="#icon" class="xeeter"><i class="fab">&#xf081;</i></a>
         <a href="#icon" class="linkedlin"><i class="fab">&#xf08c;</i></a>
@@ -291,36 +291,7 @@
   <div class="empty-footer"></div>
   <div class="copyright-footer">Copyright ©2023 All rights reserved | This template is made with <span class="heart">&nbsp;&#10084;&nbsp;</span>by <a href="#col" class="colrib">&nbsp;Colorlib</a></div>
 </div>
-<script>
-let [days, hours, minutes, seconds] = [29,23,59,59];
-timer = setInterval(myCount, 1000);
-function myCount(){
- seconds--;
- if(seconds == -1){
-   seconds = 59;
-   minutes--;
-   if(minutes == -1){
-     minutes == 59;
-     hours--;
-    if(hours == -1){
-      hours = 23;
-      days--
-     if(days == -1){
-        [days, hours, minutes, seconds] = [0,0,0,0];
-        clearInterval(timer);
-}
-}
-}
-}
-let d = days < 10? "0" + days: days;
-let h = hours < 10? "0" + hours: hours;
-let m = minutes < 10? "0" + minutes: minutes;
-let s = seconds < 10? "0" + seconds: seconds;
-document.getElementById("day").innerHTML = d; 
-document.getElementById("hour").innerHTML = h;
-document.getElementById("min").innerHTML = m;
-document.getElementById("sec").innerHTML = s;
-}
+<script src="colorlib.js">
 </script>
 </body>
 </html>

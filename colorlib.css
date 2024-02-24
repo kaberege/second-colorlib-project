@@ -337,11 +337,14 @@ display:flex;
 flex-direction:row;
 align-items:center;
 justify-content:space-between;
-padding-left:100px;
-padding-right:100px;
 position:sticky;
 top: 70px;
 background-color:#fff;
+}
+
+.bars{
+  font-size: 30px;
+  color: rgba(10,140,80,1);
 }
 
 .unicolor > a{
@@ -361,7 +364,7 @@ z-index:2;
 
 .dropdoun > a{
 display:block;
-margin:15px;
+margin:12px;
 font-size:23px;
 color:rgba(70,70,70,1);
 text-decoration:none;
@@ -384,12 +387,11 @@ background-color:#fff;
 display:flex;
 flex-direction:row;
 align-items:center;
-gap:30px;
-margin-left:-120px;
+gap:25px;
 }
 
 .callus{
-font-size:20px;
+font-size:18px;
 color:rgba(10,140,80,1);
 }
 
@@ -414,8 +416,8 @@ text-decoration:none;
 }
 
 .icobar2{
-gap:10px;
-font-size:30px;
+gap:8px;
+font-size:26px;
 }
 
 .xeeter{
@@ -440,6 +442,24 @@ transition: transform 1s ease;
 .icobar2 i:hover {
 transform: rotateY(180deg);
 }
+
+.logbox{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px),(min-width: 600px){
+  .unilogo{
+    width: 100%;
+    padding: 0 5% 0 5%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
 
 /* Styling education School section */
 
