@@ -544,40 +544,32 @@
 /* Styling complehensive section */
 
 .comprehensive {
-  height: 630px;
   background-color: rgba(255, 0, 0, 0.1);
-  display: flex;
-  flex-direction: row;
 }
-.compImage{
-  flex: 60%;
+
+.compImage {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.compImage>img {
-  width: 70%;
-  height: 60%;
 }
 
 .ascomp {
-  flex: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.ascomp1{
+
+.ascomp1 {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 7px;
 }
+
 .ascomp1>h1 {
-  font-size: 40px;
   color: rgba(50, 50, 50, 1);
 }
 
 .ascomp1>p {
-  font-size: 22px;
   color: rgba(100, 100, 100, 1);
 }
 
@@ -592,6 +584,107 @@
   height: 2px;
   background-color: rgba(10, 130, 90, 1);
 }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px),(min-width: 600px) {
+  .comprehensive {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .ascomp1>h1 {
+    font-size: 25px;
+  }
+  
+  .ascomp1>p {
+    font-size: 19px;
+  }
+  .ascomp1 {
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+  .compImage {
+    height: 350px;
+  }
+  .compImage>img {
+    width: 90%;
+    height: 340px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .comprehensive {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .ascomp1>h1 {
+    font-size: 35px;
+  }
+  
+  .ascomp1>p {
+    font-size: 21px;
+  }
+  .ascomp1 {
+    width: 56%;
+    margin: 0 auto 0 auto;
+  }
+  .compImage {
+    height: 500px;
+  }
+  .compImage>img {
+    width: 600px;
+    height: 450px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .comprehensive {
+    height: 630px;
+    display: flex;
+    flex-direction: row;
+  }
+  .compImage {
+    flex: 50%;
+  }
+  .ascomp {
+    flex: 50%;
+    align-items: center;
+    justify-content: left;
+    padding-right: 2%;
+  }
+  .compImage>img {
+    width: 80%;
+    height: 70%;
+  }
+  .ascomp1>h1 {
+    font-size: 36px;
+  }
+  
+  .ascomp1>p {
+    font-size: 22px;
+  }
+  .ascomp1 {
+    width: 90%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .ascomp1>h1 {
+    font-size: 40px;
+  }
+  .ascomp {
+    padding-right: 6%;
+  }
+}
+
 
 /* Styling offered programs */
 
@@ -694,6 +787,21 @@
   cursor: pointer;
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px),(min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
 /* Styling essential ressources */
 
 .essential {
@@ -789,6 +897,20 @@
 
 .fstudents:hover .rightstudent>i {
   color: #fff;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px),(min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
 
 /* styling TOP STORIES section */
