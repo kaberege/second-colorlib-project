@@ -66,9 +66,6 @@
   background-color: rgba(0, 255, 0, 0.6);
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px),
 (min-width: 600px) {
@@ -584,8 +581,10 @@
   height: 2px;
   background-color: rgba(10, 130, 90, 1);
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px),(min-width: 600px) {
+@media only screen and (max-width: 600px),
+(min-width: 600px) {
   .comprehensive {
     height: auto;
     display: flex;
@@ -594,20 +593,24 @@
     padding-top: 40px;
     padding-bottom: 60px;
   }
+
   .ascomp1>h1 {
     font-size: 25px;
   }
-  
+
   .ascomp1>p {
     font-size: 19px;
   }
+
   .ascomp1 {
     width: 90%;
     margin: 0 auto 0 auto;
   }
+
   .compImage {
     height: 350px;
   }
+
   .compImage>img {
     width: 90%;
     height: 340px;
@@ -624,25 +627,30 @@
     padding-top: 40px;
     padding-bottom: 60px;
   }
+
   .ascomp1>h1 {
     font-size: 35px;
   }
-  
+
   .ascomp1>p {
     font-size: 21px;
   }
+
   .ascomp1 {
     width: 56%;
     margin: 0 auto 0 auto;
   }
+
   .compImage {
     height: 500px;
   }
+
   .compImage>img {
     width: 600px;
     height: 450px;
   }
 }
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .comprehensive {
@@ -650,26 +658,31 @@
     display: flex;
     flex-direction: row;
   }
+
   .compImage {
     flex: 50%;
   }
+
   .ascomp {
     flex: 50%;
     align-items: center;
     justify-content: left;
     padding-right: 2%;
   }
+
   .compImage>img {
     width: 80%;
     height: 70%;
   }
+
   .ascomp1>h1 {
     font-size: 36px;
   }
-  
+
   .ascomp1>p {
     font-size: 22px;
   }
+
   .ascomp1 {
     width: 90%;
   }
@@ -680,6 +693,7 @@
   .ascomp1>h1 {
     font-size: 40px;
   }
+
   .ascomp {
     padding-right: 6%;
   }
@@ -689,38 +703,19 @@
 /* Styling offered programs */
 
 .offprograms {
-  height: 900px;
+  /* height: 900px; */
   background-color: #fff;
-  padding: 100px;
-  box-sizing: border-box;
-}
-
-.programs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0px 250px 50px 250px;
-  box-sizing: border-box;
 }
 
 .programs>h1 {
-  padding-bottom: 20px;
-  font-size: 40px;
   color: rgba(0, 0, 50, 1);
   font-weight: bold;
+  padding-bottom: 30px;
 }
 
 .programs>p {
-  font-size: 20px;
   color: rgba(100, 100, 100, 0.9);
   text-align: center;
-}
-
-.flexoff {
-  display: flex;
-  gap: 30px;
-  box-sizing: border-box;
 }
 
 .facscience,
@@ -737,18 +732,6 @@
 
 .facarts:hover {
   border: 2px solid rgba(10, 130, 90, 1);
-}
-
-.facscience>img {
-  width: 100%;
-  height: 200px;
-  padding-bottom: 40px;
-}
-
-.facarts>img {
-  width: 100%;
-  height: 200px;
-  padding-bottom: 40px;
 }
 
 .learnA {
@@ -787,75 +770,227 @@
   cursor: pointer;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px),(min-width: 600px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .offprograms {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: auto;
+    padding: 70px 0 70px 0;
+  }
+
+  .programs {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programs>h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .programs>p {
+    font-size: 20px;
+  }
+
+  .flexoff {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .facscience,
+  .facarts {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(10, 130, 90, 0.2);
+    padding: 20px;
+  }
+
+  .facscience>img {
+    width: 100%;
+    height: 200px;
+    padding-bottom: 40px;
+  }
+
+  .facarts>img {
+    width: 100%;
+    height: 200px;
+    padding-bottom: 40px;
+  }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .offprograms {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: auto;
+    padding: 90px 0 110px 0;
+  }
+
+  .programs {
+    width: 77%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programs>h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .programs>p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .flexoff {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .facscience,
+  .facarts {
+    width: 77%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(10, 130, 90, 0.2);
+    padding: 20px;
+  }
+
+  .facscience>img {
+    width: 100%;
+    height: 200px;
+    padding-bottom: 40px;
+  }
+
+  .facarts>img {
+    width: 100%;
+    height: 200px;
+    padding-bottom: 40px;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .programs {
+    width: 60%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programs>h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .programs>p {
+    font-size: 20px;
+  }
+
+  .flexoff {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .facscience,
+  .facarts {
+    flex: 50%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(10, 130, 90, 0.2);
+    padding: 20px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .programs {
+    width: 58%;
+  }
+
+  .programs>h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .programs>p {
+    font-size: 21px;
+  }
+
+  .flexoff {
+    width: 79%;
+  }
+
+  .facscience>img {
+    height: 250px;
+  }
+
+  .facarts>img {
+    height: 250px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .programs {
+    width: 55%;
+  }
+
+  .programs>h1 {
+    font-size: 40px;
+  }
+
+  .programs>p {
+    font-size: 23px;
+  }
+
+  .flexoff {
+    width: 80%;
+  }
 }
 
 /* Styling essential ressources */
 
 .essential {
-  height: 670px;
-  background-color: rgba(0, 255, 0, 0.2);
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
+  background-color: rgba(0, 255, 0, 0.1);
 }
 
 .essimage {
-  width: 50%;
   background-image: url('visit1.jpg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.esscontent {
-  width: 50%;
-  padding: 40px;
-}
-
-.hessential {
-  padding-bottom: 25px;
 }
 
 .hessential>h1 {
   color: rgba(0, 0, 10, 1);
-  font-size: 40px;
   font-weight: bold;
   padding-bottom: 20px;
 }
 
 .hessential>p {
   color: rgba(100, 100, 100, 1);
-  font-size: 22px;
-}
-
-.flexstudent {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 
 .fstudents {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
   border: 2px solid rgba(100, 100, 100, 0.6);
-  gap: 30px;
-  height: 90px;
+  padding: 20px;
 }
 
 .leftstudent>h2 {
@@ -870,7 +1005,6 @@
 }
 
 .rightstudent {
-  margin-top: 20px;
   width: 60px;
   height: 60px;
   border: 2px solid rgba(10, 130, 90, 1);
@@ -898,25 +1032,117 @@
 .fstudents:hover .rightstudent>i {
   color: #fff;
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px),(min-width: 600px) {
+@media only screen and (max-width: 600px),
+(min-width: 600px) {
+  .essential {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 60px 0;
+    gap: 50px;
+  }
+
+  .essimage {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto 0 auto;
+  }
+
+  .esscontent {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hessential>h1 {
+    font-size: 24px;
+  }
+
+  .hessential>p {
+    font-size: 20px;
+  }
+
+  .flexstudent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .fstudents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .esscontent {
+    width: 80%;
+    margin: 0 auto 0 30px;
+  }
+
+  .essimage {
+    height: 750px;
+  }
+  .hessential{
+    width: 90%;
+  }
+
+  .hessential>h1 {
+    font-size: 35px;
+  }
+
+  .hessential>p {
+    font-size: 21px;
+  }
+
+  .fstudents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .rightstudent {
+    margin: auto 0 auto 0;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .essimage {
+    height: 700px;
+  }
+  .hessential{
+    width: 87%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .essential {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+  }
+  .esscontent {
+    width: 50%;
+    padding: 40px 0 50px 10px;
+  }
+  .essimage {
+    width: 50%;
+    height: auto;
+  }
 }
 
 /* styling TOP STORIES section */
 
 .parenttop {
-  height: 780px;
   padding: 60px;
   box-sizing: border-box;
 }
@@ -977,6 +1203,19 @@
   color: rgba(10, 130, 90, 1);
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px),
+(min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
 /* Styling our pertners */
 
 .ourpertner {
@@ -1035,6 +1274,19 @@
     background: url('sari.jpg') no-repeat center;
   }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px),
+(min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
 
 /* Styling TRUSTED BY OVER 6000+ STUDENTS section */
 
